@@ -5,32 +5,29 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<h2>Publications/Presentations</h2>
 
-{% include base_path %}
+<div class="entry">
+  <h3>
+    One-Pot Aqueous Synthesis of Hierarchical
+    NaV<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub> Particles for High-Performance
+    Sodium Batteries
+  </h3>
+  <p><a href="http://doi.org/10.1149/1945-7111/ade47c">Publication</a></p>
+</div>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="entry">
+  <h3>
+    High-Loading NaV<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub> Cathodes Via
+    Aqueous Slurry Processing for Enhanced Sodium-Ion Battery Performance
+  </h3>
+  <p>Poster, 248th Electrochemical Society Meeting, 2025</p>
+</div>
 
-
-
+<div class="entry">
+  <h3>
+    High Performance NaV<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub> (NVP) synthesis
+    using a more sustainable spray-drying method
+  </h3>
+  <p>Poster, WashU Undergraduate Research Symposium, 2023</p>
+</div>
